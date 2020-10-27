@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.daizhiyuan.dms.mapper.StudentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.daizhiyuan.dms.entity.Student">
+        <id column="id" property="id" />
+        <result column="student_num" property="studentNum" />
+        <result column="student_name" property="studentName" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="dorm_id" property="dormId" />
+        <result column="phone" property="phone" />
+        <result column="address" property="address" />
+        <result column="sex" property="sex" />
+        <result column="dorm_num" property="dormNum"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, student_num, student_name, create_time, update_time, dorm_id,phone,address,sex,dorm_num
+    </sql>
+
+</mapper>
